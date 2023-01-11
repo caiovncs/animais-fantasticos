@@ -4,10 +4,12 @@ export default class MenuMobile {
   constructor(button, list, events) {
     this.menuButton = document.querySelector(button);
     this.menuList = document.querySelector(list);
+    this.activeClass = 'active';
+
     if (events === undefined) this.events = ['touchstart', 'click'];
     else this.events = events;
+
     this.openMenu = this.openMenu.bind(this);
-    this.activeClass = 'active';
   }
 
   openMenu() {
@@ -20,9 +22,7 @@ export default class MenuMobile {
   }
 
   addMenuMobileEvent() {
-    this.events.forEach((evento) => {
-      this.menuButton.addEventListener(evento, this.openMenu);
-    });
+    this.events.forEach((evento) => this.menuButton.addEventListener(evento, this.openMenu));
   }
 
   init() {

@@ -8,7 +8,7 @@
     align-items: center;
     background-color: #222;
     border: none;
-    padding: .8rem 1rem;
+    padding: .5rem 1rem;
     border-radius: 4px;
     text-transform: uppercase;
     font-family: 'IBM Plex Mono', monospace;
@@ -17,7 +17,7 @@
     cursor: pointer;
     margin: 10px;
     position: relative;
-    z-index: 202;
+    z-index: 300;
   }
 
 
@@ -42,7 +42,7 @@
     display: none;
     position: absolute;
     background-color: #fb5;
-    max-width: 160px;
+    width: 160px;
     z-index: 200;
     padding: 60px 0 20px 0;
     top: 0;
